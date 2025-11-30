@@ -69,21 +69,16 @@ jobs:
           name: nutri-helper.user.js
           path: dist
 
-      - name: Extract artifact.tar
-        run: |
-          tar -xf dist/artifact.tar -C dist
-          rm dist/artifact.tar
+      - name: unzip user script
+        run: unzip dist/nutri-helper.user.js.zip -d dist/
 
-      - name: Zip dist folder
-        run: zip -r dist.zip dist
-
-      - name: Generate SHA256 checksum
-        run: sha256sum dist.zip > checksum_sha256.txt
+      - name: Create SHA256 checksum
+        run: sha256sum dist/nutri-helper.user.js > checksum_sha256.txt
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist.zip, checksum_sha256.txt
+          files: dist/nutri-helper.user.js, checksum_sha256.txt
           tag_name: latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
