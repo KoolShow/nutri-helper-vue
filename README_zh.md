@@ -2,6 +2,11 @@
 
 > 一个轻量级的用户脚本，用于增强 [https://nutrimatic.org](https://nutrimatic.org) 。
 
+##### [English](./README.md) 中文
+
+![1764529939258](image/README/1764529939258.png)
+
+---
 🌟 快速安装
 
 在浏览器中打开下面的安装链接，用户脚本管理器会提示安装：

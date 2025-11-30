@@ -2,6 +2,12 @@
 
 > A lightweight userscript that enhances [https://nutrimatic.org/](https://nutrimatic.org/).
 
+##### English [中文](./README_zh.md)
+
+![1764529939258](image/README/1764529939258.png)
+
+---
+
 🌟 Quick Install
 
 Open the installation link below in your browser and your userscript manager will prompt you to install:
