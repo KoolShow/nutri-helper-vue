@@ -63,11 +63,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: nutri-helper.user.js
-          path: dist
+
+      - name: Display structure of downloaded files
+        run: ls -R
 
       - name: unzip user script
         run: unzip dist/nutri-helper.user.js.zip -d dist/
