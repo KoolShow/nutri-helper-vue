@@ -35,7 +35,7 @@
         @change="onNumChange"
       >
         <option
-          v-for="numOption in [20,50,100,200,500]"
+          v-for="numOption in [10,20,50,100,200,500]"
           :key="numOption"
           :value="numOption"
         >
