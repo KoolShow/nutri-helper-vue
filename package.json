@@ -19,5 +19,9 @@
     "vite": "^7.1.3",
     "vite-plugin-monkey": "^7.1.1",
     "vue-tsc": "^3.0.6"
-  }
+  },
+  "repository": "https://github.com/KoolShow/nutri-helper-vue/",
+  "license": "MIT",
+  "author": "KoolShow, cl0vis403",
+  "bugs": "https://github.com/KoolShow/nutri-helper-vue/issues"
 }
